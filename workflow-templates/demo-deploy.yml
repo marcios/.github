@@ -41,9 +41,8 @@ jobs:
     with:
       variavel-demo: "Demo dev"
     
-   deploy-hml:
-   needs: deploy-dev
-    needs: build
+  deploy-hml:
+    needs: deploy-dev
     uses: marcios/pipeline-template/.github/workflows/demo-deploy.yml@main
     with:
       variavel-demo: "Demo dev"
